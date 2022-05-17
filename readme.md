@@ -4,3 +4,6 @@
 3. github test_sung branch create
 4. github readme.md 파일 push 및 PR 연습
 5. 일단 YOON PR test ~!!!
+##22.05.17
+1. db setting
+2. create models
