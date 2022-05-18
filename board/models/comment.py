@@ -3,7 +3,7 @@ from django.db import models
 
 class Comment(models.Model):
     ref_id = models.ForeignKey(
-        "Board", related_name="board_comment", on_delete=models.CASCADE
+        "Article", related_name="article_comment", on_delete=models.CASCADE
     )
     ref_comment_id = models.ForeignKey(
         "Comment", related_name="ref_comment", on_delete=models.CASCADE

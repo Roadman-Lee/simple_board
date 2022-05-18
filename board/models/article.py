@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Board(models.Model):
+class Article(models.Model):
     board_id = models.IntegerField(null=False)
     title = models.CharField(max_length=255, null=False)
     article = models.TextField(max_length=1000, null=False)

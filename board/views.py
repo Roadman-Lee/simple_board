@@ -6,3 +6,6 @@ from django.shortcuts import render
 
 def board(request):
     return HttpResponse("hello world")
+
+
+

@@ -1,2 +1,2 @@
-from .board import Board
+from .article import Article
 from .comment import Comment
