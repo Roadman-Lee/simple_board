@@ -3,5 +3,9 @@ from django.shortcuts import render
 
 # Create your views here.
 
+
 def board(request):
-    return HttpResponse('hello world')
+    return HttpResponse("hello world")
+
+
+
