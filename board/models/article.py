@@ -9,3 +9,4 @@ class Article(models.Model):
     nickname = models.CharField(max_length=255, null=False)
     create_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    is_deleted = models.BooleanField(default=False)
