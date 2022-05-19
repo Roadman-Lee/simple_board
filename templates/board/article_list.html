@@ -1,0 +1,11 @@
+{% for article in articles %}
+    <th>
+        <h3>
+            <a href="{{ article.url }}">{{ article.title }}</a>
+        </h3>
+        <ul>
+            <li>{{ article.nickname }}</li>
+            <li>{{ article.article}}</li>
+        </ul>
+    </th>
+{% endfor %}
