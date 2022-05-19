@@ -7,3 +7,6 @@
 ##22.05.17
 1. db setting
 2. create models
+##22.05.18 
+1. add db_model, is_delete 
+2. 개발 초기셋팅 admin 공부 후 admin 셋팅하기
