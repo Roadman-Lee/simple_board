@@ -4,14 +4,26 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
+
+
 from board.models import Article
 from y_board import kornum
+# test
+from django.views.generic import ListView
+
+
+class TestViews(ListView):
+    context_object_name = 'testList'
+
+    def get_queryset(self):
+        return Article.objects.filter(board_id=3)
+
+
+
 
 
 def board(request):
     return HttpResponse("hello world")
-
-
 
 
 def insert(request):
@@ -31,7 +43,7 @@ def insert(request):
                 l += 1
                 test_insert_article(board_id=board_id, num=l)
 
-        return HttpResponse('우왕 성공했어요 헤헷',status=200)
+        return HttpResponse('우왕 성공했어요 헤헷', status=200)
 
     else:
         return HttpResponse(status=404)
@@ -55,7 +67,6 @@ def random_name_or_msg(name_msg=0):
     with open(file_name, 'r', encoding="UTF-8") as f:
         random_txt = random.choice(list(f.readlines())).splitlines()[0]
     return random_txt
-
 
 # set FOREIGN_KEY_CHECKS = 1;
 # truncate table board_article;
